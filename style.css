@@ -1,0 +1,56 @@
+/*pagina principal*/
+body {
+  margin: 0em;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.cover{
+  height:400px;
+  background-image:url(https://cdn.glitch.com/13c39ea8-6dba-4536-b1ea-c762b448916f%2Frsz_1ferenc-almasi-eypcldxhvb0-unsplash.jpg?v=1607815280347);
+  color:white;
+  background-size: cover;
+  bacgroud-position:center;
+  background-color:rgba(0,0,0,0.4);
+  background-blend-mode: darken;
+  
+}
+
+.cover-small{
+  height:200px;
+  background-blen-mode:normal;
+}
+/*presentacion de los proyectos*/
+.card{
+  border:0!important;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.6); 
+}
+
+.card-title{
+  min-height:3rem;
+}
+
+.card-text{
+  min-height:10rem;
+}
+
+.product-stripe{
+  overflow-x:scroll;
+  padding-top:1rem;
+  padding-bottom:1rem;
+}
+
+
+.stripe-container{
+  display:flex;
+}
+
+
+.stripe-container .card{
+  width:300px;
+  flex-shrink:0;
+  margin-right:1rem;
+}
+
+/*proyectos*/
+
+
