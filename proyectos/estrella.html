@@ -52,7 +52,33 @@
       <p class="canvas">
       <canvas id="canvas"></canvas></p>
 
-  </center>
+  </center> 
+var  sketchProc  =  function ( processingInstance )  {
+
+  con  ( ProcessingInstance )  {
+tamaño ( 400 , 400 ) ;
+var  xPos  =  50 ;
+var  yPos  =  50 ;
+var  xPos2  =  350 ;
+var  yPos2  =  50 ;
+
+dibujar  =  función ( )  {
+    fondo ( 29 ,  40 ,  115 ) ;
+    llenar ( 255 ,  242 ,  0 ) ;
+    elipse ( xPos ,  yPos ,  10 ,  10 ) ;
+    xPos  =  + 5 ;
+    yPos  =  - 5 ;
+    elipse ( yPos2 ,  yPos2 ,  10 ,  10 ) ;
+    yPos2  - = 2 ;
+    xPos2  + = 2 ;
+} ;
+
+
+
+  }
+} ;
+var  lienzo  =  documento . getElementById ( "lienzo" ) ;
+ var  Processing  =  new  Processing ( lienzo ,  sketchProc ) ;
 
   </body>
   <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
