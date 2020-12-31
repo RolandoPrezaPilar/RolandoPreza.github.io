@@ -1,96 +1,27 @@
-var book = [
-    {
-    title: "The Giver",
-    autor:"M. Shadows",
-    stars: 4,
-    color: color(135, 92, 92),
-    goodBook: false
-},
-{
-    title: "Anabana",
-    autor:"Iron Man xD",
-    stars: 4,
-    color: color(163, 44, 163),
-    goodBook: true
-},
-{
-    title: "Jorge el curioso",
-    autor:"Anonimo",
-    stars: 7,
-    color: color(71, 54, 71),
-    goodBook: true
-},
-{
-    title: "El Libro Troll",
-    autor:"Rubiuh",
-    stars: 5,
-    color: color(79, 219, 9),
-    goodBook: true
-},
-{
-    title: "Macario",
-    autor:"B. Traven",
-    stars: 5,
-    color: color(98, 255, 20),
-    goodBook: false
-},
-{
-    title: "Alicia",
-    autor:"Lewis Caroll.",
-    stars: 4,
-    color: color(47, 122, 10),
-    goodBook: false
-},
-{
-    title: "Cervantes.",
-    autor:"Sara Cordon.",
-    stars: 3,
-    color: color(136, 148, 130),
-    goodBook: true
-},
-{
-    title: "El Alquimista.",
-    autor:"P. Coelho.",
-    stars: 4,
-    color: color(220, 213, 224),
-    goodBook: true
-},
-{
-    title: "Apocalipsis.",
-    autor:"S. King.",
-    stars: 3,
-    color: color(47, 92, 24),
-    goodBook: false
-}
-];
-    
-for(var l = 0; l < book.length; l++){
-    fill(255, 0, 0);
-    rect(0, 120 + floor(l/4)*120, width, 10);
-    
-    var currentBook = book[l];
-    fill(currentBook.color);
-    var newRowXOffset = floor(l/4)* width* (-1);
-    var currentBookX = (l*100) + newRowXOffset + 4;
-    var currentBookY = 20 + (floor(l/4)* 120);
-    
-    rect(currentBookX, currentBookY, 90, 100);
-    fill(0, 0, 0);
-    var currentBook = book[l];
-    textSize(11);
-    text(currentBook.title, 6 + currentBookX, 6 + currentBookY, 70, 100);
-    textSize(9);
-    text(currentBook.autor, 8 + currentBookX, 19 + currentBookY, 70, 100);
-    
-    for (var s = 0; s < book[l].stars; s++) {
-    image(getImage("cute/Star"), (2 + s * 20) + currentBookX, (72 +     currentBookY), 20, 30);}
-   
-    if(currentBook.goodBook === true){
-        var img = getImage("cute/Heart");
-        image(img, 29 + currentBookX, 38 + currentBookY, 27, 47);
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UX-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proyectos de khan academy</title>
+  </head>
+  <style>
+    h1{
+      color: black;
     }
-    if(currentBook.goodBook === false){
-        var img = getImage("creatures/OhNoes-Hmm");
-        image(img, 28 + currentBookX, 47 + currentBookY, 30, 31);
-    }
-}
+  </style>
+  <body>
+    <div class="container mt-5 mb-5">
+      <h1>Proyecto: Librero</h1>
+    </div>
+    <center>
+      <canvas id="canvas" width="700px"  height="500px"> canvas </canvas>
+    </center>
+  </body>
+  <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+  <script type="text/javascript" src="../js/librero.js"></script>
+
+
+
+</html>
