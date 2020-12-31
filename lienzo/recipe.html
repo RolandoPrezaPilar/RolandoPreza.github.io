@@ -1,27 +1,127 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UX-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Proyectos de khan academy</title>
-  </head>
-  <style>
-    h1{
-      color: black;
-    }
-  </style>
-  <body>
-    <div class="container mt-5 mb-5">
-      <h1>Proyecto: Recipe book</h1>
-    </div>
-    <center>
-      <canvas id="canvas" width="700px"  height="500px"> canvas </canvas>
-    </center>
-  </body>
-  <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
-  <script type="text/javascript" src="../js/recipe.js"></script>
-
-
-
+<html>
+    <head>
+        <title>Project: Recipe book</title>
+        <meta charset="utf-8">
+        <style>
+            body {background-color:rgb(68, 82, 29);}
+            body {color:white;}
+            #banock {color:red;}
+        </style>
+    </head>
+    <body>
+       
+        <h1>Libro de Recetas...</h1>
+        
+        <h2>Contenido:</h2>
+        
+        <ol>
+            <li><a href="#marinado">Marinado al curry.</a></li>
+            <li><a href="#lomo">Lomo de cerdo.</a></li>
+            <li><a href="#arroz">Arroz con picadillo.</a></li>
+        </ol>
+        
+        <h2 id="marinado">Delicioso Marinado al Curry.</h2>
+        
+        <ul>
+            <li>Tiempo: 15 mins.</li>
+            <li>Porcion: Plato Grande.</li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredientes</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Verduras a la plancha</td>
+                    <td>6.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Agua de Sabor</td>
+                    <td>1 vaso.</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p><strong>Paso 1:</strong> Cortar el pezcado en trozos retirando cualquier espina que pueda tener.<br>
+        <strong>Paso 2:</strong> Preparamos la marinada mezclando en un cuenco el aceite, el vinagre, el curry en polvo y el cilantro.<br>
+        <strong>Paso 3:</strong> con la sartén ya bien caliente, solo nos queda escurrir el bonito del líquido de marinar y marcarlo bien en la plancha muy caliente por todos lados hasta que esté dorado.<br>
+        <strong>Paso 4:</strong> Si somos de los que no podémos ver el centro del pescado crudo, en vez de dejarlo más tiempo y que se reseque por fuera, lo que debemos de hacer es cortar los trozos más finos y hacer como filetitos. Así quedarán completamente cocinados e igualmente jugosos.<br>
+        <strong>Step 5:</strong> Servir.
+</p>
+        
+                <h2 id="lomo">Lomo de cerdo.</h2>
+        
+        <ul>
+            <li>Tiempo: 30 mins.</li>
+            <li>Porcion: Plato Grande.</li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredientes</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lomo de cerdo.</td>
+                    <td>Todo lo que puedas comer</td>
+                </tr>
+                <tr>
+                    <td>Carne de Cerdo</td>
+                    <td>300g.</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p><strong>Paso 1:</strong> Empezaremos cortando los filetes de lomo en tiras y aprovechando para retirar cualquier trocito de grasa visible que pueda tener la carne.<br>
+        <strong>Paso 2:</strong> Preparamos la marinada para la carne mezclando todos los ingredientes en un bol. A la hora de añadir la maizena hay que tener cuidado y disolverla rápido y de manera enérgica para que no haga grumos.<br>
+        <strong>Paso 3:</strong> Sumergimos las tiras de lomo de cerdo en la marinada, mezclamos bien y dejamos reposar mientras limpiamos y troceamos las verduras.<br>
+        <strong>Paso 4:</strong> Finalmente incorporamos las tiras de carne que teníamos reservadas, removemos durante un minuto más o menos para que recuperen la temperatura, espolvoreamos con las semillas de sésamo tostadas y servimos inmediatamente.<br>
+        </p>
+        <h2 id="arroz">Arroz con picadillo.</h2>
+        
+        <ul>
+            <li>Tiempo: 30 mins.</li>
+            <li>Porcion: Al gusto.</li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredientes</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arroz</td>
+                    <td>1 kg..</td>
+                </tr>
+                <tr>
+                    <td>Tomate.</td>
+                    <td>3 pzs.</td>
+                </tr>
+                <tr>
+                    <td>Agua.</td>
+                    <td>Abundante.</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p><strong>Paso 1:</strong> cocer en una abundante cantidad de agua.<br>
+        <strong>Paso 2:</strong> cuando hierva añadimos sal como si fuera para cocer pasta. Lavamos el arroz bajo un chorro de agua fría y lo escurrimos.<br>
+        <strong>Paso 3:</strong> Cuando el agua haya empezado a hervir, añadimos el arroz integral ya lavado.<br>
+        <strong>Paso 4:</strong> Cocinamos con la olla destapada durante 20 minutos a fuego alto, sin remover y desespumando de vez en cuando.<br>
+        <strong>Paso 5:</strong> Pasados los 20 minutos, apartamos la olla del fuego, escurrimos el arroz, lo ponemos de nuevo en la olla y la tapamos durante 10 minutos y Servimos.
+        </p>
+    
+    </body>
 </html>
